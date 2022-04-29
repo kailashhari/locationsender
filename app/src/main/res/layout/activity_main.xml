@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Sender"
+        android:fontFamily="cursive"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your parent's phone number"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="25dp"
+        android:id="@+id/subtitle"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        android:hint="Mobile number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:background="#DDDDDD"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the number of seconds gap"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number"
+        android:layout_marginTop="25dp"
+        android:id="@+id/subtitle1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle1"
+        android:hint="Delay in seconds"
+
+        android:inputType="number"
+        android:textAlignment="center"
+        android:background="#DDDDDD"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/delay"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/delay"
+        android:id="@+id/track"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#009900"
+        android:textColor="@color/white"
+        android:text="Start tracking"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
